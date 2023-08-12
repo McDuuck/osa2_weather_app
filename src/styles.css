@@ -1,0 +1,31 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.rain {
+    background-color: #374151;
+    background-image: url(weather_images/rainy.gif);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .clouds {
+    background-color: #374151;
+    background-image: url(weather_images/cloudy.gif);
+    background-size:contain;
+    background-position: center;
+  }
+
+  .clear {
+    background-color: #374151;
+    background-image: url(weather_images/clear.gif);
+    background-size: 25%;
+    background-repeat:repeat-x;
+    background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+    .clear {
+        background-repeat: repeat-y;
+    }
+}
